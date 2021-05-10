@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class BlogService {
-  blogsUrl = 'http://restedblog.herokuapp.com/pshah/api';
+  blogsUrl = 'https://restedblog.herokuapp.com/pshah/api';
 
   constructor(private http: HttpClient) {}
 
