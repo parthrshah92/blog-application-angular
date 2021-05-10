@@ -1,0 +1,16 @@
+<mat-accordion>
+    <div *ngFor="let blog of blogs; first as isFirst">
+        <mat-expansion-panel [expanded]="isFirst">
+        <mat-expansion-panel-header >
+            <mat-panel-title>
+            {{blog.title}}
+            </mat-panel-title>
+            <mat-panel-description class="blog-date">
+            {{blog.timestamp | dateFormat}}
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <app-blog-detail [blog]="blog"></app-blog-detail>
+        </mat-expansion-panel>
+    </div>
+</mat-accordion>
+  
