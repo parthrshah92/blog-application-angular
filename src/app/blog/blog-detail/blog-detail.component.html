@@ -1,11 +1,11 @@
 <mat-card>
-  <mat-card-header>
+  <mat-card-header class="card">
     <div mat-card-avatar></div>
-    <mat-card-title>Title: {{blog.title}} </mat-card-title>
+    <mat-card-title class="card__title">Blog Title: {{blog.title}} </mat-card-title>
     <mat-card-subtitle>Date: {{blog.timestamp | dateFormat}}</mat-card-subtitle>
   </mat-card-header>
   <img mat-card-image src="assets/img/random-img.jpg" alt="Photo of a random blog">
-  <mat-card-content>
+  <mat-card-content class="card__content">
     <p>
       {{blog.text}}
     </p>

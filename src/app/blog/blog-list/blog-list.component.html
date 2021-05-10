@@ -1,11 +1,11 @@
-<mat-accordion>
+<mat-accordion class="accordion">
     <div *ngFor="let blog of blogs; first as isFirst">
         <mat-expansion-panel [expanded]="isFirst">
-        <mat-expansion-panel-header >
-            <mat-panel-title>
+        <mat-expansion-panel-header class="accordion__header">
+            <mat-panel-title class="accordion__header--title">
             {{blog.title}}
             </mat-panel-title>
-            <mat-panel-description class="blog-date">
+            <mat-panel-description class="accordion__header--date">
             {{blog.timestamp | dateFormat}}
             </mat-panel-description>
         </mat-expansion-panel-header>

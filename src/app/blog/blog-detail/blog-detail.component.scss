@@ -1,0 +1,15 @@
+@import '../../styles/breakpoints';
+@import '../../styles/fonts';
+@import '../../styles/colors';
+
+
+@include sm(){
+    .card {
+        padding: 10px;
+      
+        &__title {
+          @include font(24px, $black, 400, 32px);
+          text-align: center;
+        }
+    }
+  }
