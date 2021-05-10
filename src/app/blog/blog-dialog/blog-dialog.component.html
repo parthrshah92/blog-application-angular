@@ -17,8 +17,8 @@
             </mat-form-field>
         </div>
         <div class="form-buttons" mat-dialog-actions>
-            <button mat-button (click)="onCancel()">Cancel</button>
-            <button mat-button (click)="data.isEdit ? onSave() : onCreate()">{{data.isEdit ? 'Save' : 'Create'}}</button>
+            <button mat-raised-button color="accent" (click)="onCancel()">Cancel</button>
+            <button mat-raised-button color="primary" (click)="data.isEdit ? onSave() : onCreate()">{{data.isEdit ? 'Save' : 'Create'}}</button>
         </div>
     </form>
 </div>
@@ -27,6 +27,6 @@
     <p>
         Are you sure you want to delete?
     </p>
-    <button mat-button (click)="onCancel()">Cancel</button>
-    <button mat-button (click)="onDelete(data.blog)">Delete</button>
+    <button mat-raised-button color="accent" (click)="onCancel()">Cancel</button>
+    <button mat-raised-button color="warn" (click)="onDelete(data.blog)">Delete</button>
 </div>
