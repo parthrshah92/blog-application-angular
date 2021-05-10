@@ -13,7 +13,7 @@ export class AppComponent {
   constructor(public dialog: MatDialog, private blogService: BlogService) {}
 
   dialogTitle = 'Create Post';
-  title = 'Angular-CRUD-Post';
+  title = 'blog-application-angular';
   blogs: Blog;
 
   onAddPost() {
